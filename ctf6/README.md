@@ -10,16 +10,16 @@ When looking at the encrypt function it be seen that the nonce, which is the IV 
 
 Next creating `pwn.py` which is a program to find the decrypted cipher.\
 `plaintext = encrypted_message xor encrypted_flag`\
-Also can be seen in function `get_plain_text()`\
+Also can be seen in function `get_plain_text()`
 
-`
-def get_plain_text(e_one, e_two, p_bytes):\
-    first_block = list()\
-    for i in range(len(e_two)):\
-        first_block.append(e_one[i] ^ e_two[i])\
-        first_block[i] ^= p_bytes[i]\
-        first_block[i] = chr(first_block[i])\
-    return "".join(first_block)\
-`
+``` python
+def get_plain_text(e_one, e_two, p_bytes):
+    first_block = list()
+    for i in range(len(e_two)):
+        first_block.append(e_one[i] ^ e_two[i])
+        first_block[i] ^= p_bytes[i]
+        first_block[i] = chr(first_block[i])
+    return "".join(first_block)
+```
 
 
