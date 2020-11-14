@@ -10,7 +10,7 @@ When looking at the encrypt function it be seen that the nonce, which is the IV 
 
 Next creating `pwn.py` which is a program to find the decrypted cipher.\
 `plaintext = encrypted_message xor encrypted_flag`\
-Also can be seen in function `get_plain_text()`
+Also can be seen in function `get_plain_text()` also can be seen below
 
 ``` python
 def get_plain_text(e_one, e_two, p_bytes):
