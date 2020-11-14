@@ -21,5 +21,7 @@ def get_plain_text(e_one, e_two, p_bytes):
         first_block[i] = chr(first_block[i])
     return "".join(first_block)
 ```
-
-
+Steps:
+1. Take ecrypted flag and slice it up where the first 16 bytes is the nonce and the last 16 bytes is the message in hex.
+2. Encrpyted the encrypted message in hex with the given nounce to the new message.
+3. Then use the `bytes.fromhex(new_message) to get the flag`
