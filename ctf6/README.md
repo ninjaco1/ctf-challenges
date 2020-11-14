@@ -13,13 +13,13 @@ Next creating `pwn.py` which is a program to find the decrypted cipher.\
 Also can be seen in function `get_plain_text()`\
 
 `
-def get_plain_text(e_one, e_two, p_bytes):
-    first_block = list()
-    for i in range(len(e_two)):
-        first_block.append(e_one[i] ^ e_two[i])
-        first_block[i] ^= p_bytes[i]
-        first_block[i] = chr(first_block[i])
-    return "".join(first_block)
+def get_plain_text(e_one, e_two, p_bytes):\
+    first_block = list()\
+    for i in range(len(e_two)):\
+        first_block.append(e_one[i] ^ e_two[i])\
+        first_block[i] ^= p_bytes[i]\
+        first_block[i] = chr(first_block[i])\
+    return "".join(first_block)\
 `
 
 
