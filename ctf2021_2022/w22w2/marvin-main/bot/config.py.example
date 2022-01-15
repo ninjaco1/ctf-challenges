@@ -1,0 +1,25 @@
+BOT_PREFIX = "$"
+BOT_TOKEN = "tokentokentoken"
+
+GUILD_ID = 123
+
+ROLES = {"verified": 123}
+BOT_ROLE_ID = 123
+
+ANNOUNCEMENTS_CHANNEL_ID = 123
+SCOREBOARD_CHANNEL_ID = 123
+
+EMAIL_SERVER = "example.com"
+EMAIL_USERNAME = "noreply@example.com"
+EMAIL_PASSWORD = "password"
+VALID_EMAIL_DOMAINS = ["example.com", "example2.com"]
+
+DB_CONFIG = {
+    "host":"mysql",
+    "user":"root",
+    "password":"password",
+    "database":"ctf_league",
+    "port": "3306"
+}
+
+TIME_OFFSET_FROM_UTC = -7

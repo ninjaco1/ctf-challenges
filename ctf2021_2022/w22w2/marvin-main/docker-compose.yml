@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  bot:
+    build: ./bot
+    restart: always
+    depends_on:
+      - mysql
+    links:
+      - mysql
+  mysql:
+    build: ./mysql
+    env_file:
+      - .env
+    ports:
+      - "3306:3306"
